@@ -114,7 +114,7 @@ class _CameraPageState extends State<CameraPage> {
   }
 
   Future<void> _processImage(XFile image) async {
-    var uri = Uri.parse('https://europe-west4-data-dev-412106.cloudfunctions.net/waste5_api');
+    var uri = Uri.parse('Model_API');
     var request = http.MultipartRequest('POST', uri)
       ..files.add(await http.MultipartFile.fromPath('image', image.path));
 
