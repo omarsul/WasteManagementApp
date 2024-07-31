@@ -84,7 +84,7 @@ class ResultPage extends StatelessWidget {
     
     //Navigator.of(context).pop();
 
-    var uri = Uri.parse('https://me-central2-data-dev-412106.cloudfunctions.net/waste_bq');
+    var uri = Uri.parse('Table_API_for_later_training');
     var filename = result['filename'];
     var response = await http.post(
       uri,
